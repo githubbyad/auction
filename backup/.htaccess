@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# restrict folders
+Options -Indexes
+
+# load actual file and directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# send everything to index.php page
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

@@ -1,0 +1,5 @@
+- add refresher to visitor
+- add disable auction page for normal user before 3 days of auction
+- show successful big message on top before team selection
+- create Players controller for admin
+- create Teams controller for admin 
